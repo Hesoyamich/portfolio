@@ -11,3 +11,136 @@ body
 
 *, *:after *:before
     box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6 
+    margin: 0
+
+.container 
+    width: 100%
+    max-width: 1170px
+    padding: 0 15px
+    margin: 0 auto
+
+// Button
+.btn
+    display: inline-block
+    vertical-align: top
+    font-size: 1.06rem
+    text-align: center
+    color: $black
+    text-transform: uppercase
+    text-decoration: none
+    border: 1px solid $gray
+    border-radius: 30px
+    background: none
+    line-height: 1.1
+    padding: 1.1rem 1.8rem
+    cursor: pointer
+    font-family: inherit
+    transition: all .2s
+    &:focus
+        outline: none
+
+    &:hover
+        box-shadow: 2px 2px 10px rgba(#000000 , .24)
+        background-color: $black
+        color: $white
+
+    + .btn
+        margin-left: 1rem
+
+// header
+.header
+    padding: 1.2rem 0
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+// user
+.user 
+    display: flex
+    &__avatar
+        height: 57px
+        width: 57px
+        img
+            border-radius: 50%
+    &__content
+        padding-left: 9px
+    &__name
+        font-size: 1.06rem
+        font-size: $black
+        font-weight: 700
+        line-height: 1.2rem
+    &__prof
+        font-size: 0.8rem
+        color: rgba($black, .7)
+        margin-top: 5px
+
+// nav
+.nav
+    display: flex
+    align-items: center
+    height: 100%
+    &__item
+        margin: 0 30px
+        font-size: 0.93rem
+        color: $black
+        text-transform: uppercase
+        font-weight: 700
+        text-decoration: none
+        &--btn
+            padding: 0.66rem 2rem
+            border: 2px solid $black
+            border-radius: 20px
+            &:hover
+                background-color: $black
+                color: $white
+    &__item:hover
+        border-bottom: 2px solid $black
+
+// intro
+.intro
+    
+    &__inner
+        background: url("../images/symbols.png") right bottom no-repeat
+        position: relative
+        display: flex
+        border-bottom: 1px solid rgba($gray, .3)
+        padding-top: 100px
+        padding-bottom: 120px
+
+    &__content
+        width: 50%
+
+    &__suptitle
+        font-size: 2.13rem
+        font-weight: 200
+        color: $black
+
+    &__title
+        font-size: 3rem
+        color: $black
+        font-weight: 700
+    
+    &__prof
+        font-size: 1.2rem
+        color: rgba($black, .7)
+
+
+    &__photo
+        position: absolute
+        right: 0
+        bottom: -1px
+        z-index: 1
+    
+// soc
+.soc
+    display: flex
+    margin-top: 25px
+    margin-bottom: 42px
+    &__link
+        margin-right: 10px
+        transition: .1s all
+        &:hover
+            transform: translateY(-5px)
